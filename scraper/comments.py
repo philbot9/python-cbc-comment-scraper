@@ -8,8 +8,6 @@ request_num = 1
 
 
 def fetch_comments(page_id, params, after_id = ''):
-    print('Fetching comments ', page_id, params, after_id)
-
     timestamp = now()
     callback_param = f'Zepto{timestamp}'
     json_params = build_page_params(page_id, request_num, params, after_id)
